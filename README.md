@@ -16,7 +16,7 @@ This repository contains programs and examples from my learning journey as an IT
    - Nested If Statements  
    - Maximum Number Programs  
    - Grade Calculator  
-
+   
 3. **Loops**  
    - For Loop, While Loop, Do-While Loop  
    - Nested Loops  
@@ -37,20 +37,4 @@ This repository contains programs and examples from my learning journey as an IT
    - Polymorphism  
    - Encapsulation  
 
----
 
-## 📂 Folder Structure
-
-java-fundamentals/
-│
-├── 01-basics/
-├── 02-conditions/
-├── 03-loops/
-├── 04-arrays/
-├── 05-methods/
-├── 06-oop/
-└── README.md
-
-## 🏆 Author
-
-**Sandun Dilshan** – IT Student at University of Moratuwa
