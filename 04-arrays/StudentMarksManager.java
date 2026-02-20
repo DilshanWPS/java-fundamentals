@@ -66,8 +66,7 @@ class StudentMarksManager{
                     break;
                 case "E":
                     System.out.println("Thank you....");
-                    flag=false;
-                    break;
+                    System.exit(0);
                 default:
                     System.out.println("Invalid entry...");
 
