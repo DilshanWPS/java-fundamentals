@@ -52,7 +52,7 @@ class StudentMarksManager{
                 case "B":
                     System.out.println("Student marks are..");
                     for(int i=0;i<subjectMarks.length;i++){
-                       System.out.print(subjectMarks[i]+" ");
+                       System.out.println("Subject "+(i+1)+" mark is "+subjectMarks[i]);
                     }
                     System.out.println();
                     break;
@@ -67,6 +67,7 @@ class StudentMarksManager{
                 case "E":
                     System.out.println("Thank you....");
                     flag=false;
+                    break;
                 default:
                     System.out.println("Invalid entry...");
 
