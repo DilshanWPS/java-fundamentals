@@ -17,5 +17,21 @@ public class Main{
         System.out.println();
         ConstructorExample object3=new ConstructorExample();
         //object3.ConstructorExample(); //constructor is not normal method,so we cant access it like this
+
+        System.out.println();
+        System.out.println("--Static keyword related programs--");
+        StaticKey object4=new StaticKey();
+        System.out.println(object4.x);
+        System.out.println(object4.y);
+
+        System.out.println();
+        StaticKey object5=new StaticKey();
+        System.out.println(object5.x);
+        System.out.println(object5.y);
+
+        object4.y=100;
+        System.out.println(object4.y);
+        System.out.println(object5.y);
+
     }
 }
