@@ -13,5 +13,9 @@ public class Main{
         System.out.println("This is object 1 output : "+object1.x);
 
         System.out.println("This is object 2 output : "+object2.x);
+
+        System.out.println();
+        ConstructorExample object3=new ConstructorExample();
+        //object3.ConstructorExample(); //constructor is not normal method,so we cant access it like this
     }
 }
