@@ -1,7 +1,13 @@
 import java.util.Scanner;
+import java.sql.Connection;
 
-class programme1{
+class Programme1{
     public static void main(String args[]){
+
+        Connection conn = DatabaseConnection.getConnection();
+        if(conn != null) {
+            System.out.println("You can now interact with MySQL!");
+        }
 
         Scanner scanner=new Scanner(System.in);
 
@@ -27,7 +33,6 @@ class programme1{
             System.out.print("Enter your role number : ");
             String roleNumber=scanner.next();
             printLine();
-
 
             switch(roleNumber){
                 case "1":
@@ -58,12 +63,15 @@ class programme1{
         printLine();
         System.out.println("welcome "+ roleName +" for the student management system of "+schoolName);
         printLine();
+
     }
 
+    //method 1
     public static void printLine(){
         System.out.println();
     }
 
+    //method 2
     public static String[] getName(Scanner scanner){
         String[] names=new String[3];
 
@@ -111,6 +119,7 @@ class programme1{
         return names;
     }
 
+    //method 3
     public static String getFullName(Scanner scanner){
         String[] fullNameArray=getName(scanner);
         String fullName="";
