@@ -64,6 +64,13 @@ class Programme1{
         System.out.println("welcome "+ roleName +" for the student management system of "+schoolName);
         printLine();
 
+        String[] nameParts = roleName.trim().split(" ");
+        String title = nameParts[0];
+        String firstName = nameParts[1];
+        String lastName = nameParts[2];
+
+        UserService.saveUser(role, title, firstName, lastName);
+
     }
 
     //method 1
