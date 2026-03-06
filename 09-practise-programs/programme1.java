@@ -71,6 +71,8 @@ class Programme1{
 
         UserService.saveUser(role, title, firstName, lastName);
 
+        actions(scanner,role);
+        
     }
 
     //method 1
@@ -136,6 +138,54 @@ class Programme1{
         }
 
         return fullName;
+    }
+
+    //method 4
+    public static void actions(Scanner scanner,String role){
+        switch(role){
+
+            case "principal":
+                printLine();
+                System.out.println("you can perform following tasks");
+                System.out.println("1.add students");
+                System.out.println("2.view students");
+                System.out.println("3.get total students");
+                printLine();
+                System.out.print("enter your task : ");
+                int selection1=scanner.nextInt();
+                printLine();
+                break;
+
+            case "teacher":
+                printLine();
+                System.out.println("you can perform following tasks");
+                System.out.println("1.add subjects");
+                System.out.println("2.add student marks");
+                System.out.println("3.assign students level");
+                System.out.println("4.calculate student places");
+                printLine();
+                System.out.print("enter your task : ");
+                int selection2=scanner.nextInt();
+                printLine();
+                break;
+            
+            case "student":
+                printLine();
+                System.out.println("you can perform following tasks");
+                System.out.println("1.view");
+                System.out.println("2.view your level");
+                System.out.println("3.view your place");
+                printLine();
+                System.out.print("enter your task : ");
+                int selection3=scanner.nextInt();
+                printLine();
+                break;
+
+            
+        }
+
+
+        
     }
 
 }
