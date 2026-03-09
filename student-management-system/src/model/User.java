@@ -1,6 +1,6 @@
 package model;
 
-class User{
+public class User{
 
     private String role;
     private String registrationNumber;

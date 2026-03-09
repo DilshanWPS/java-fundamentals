@@ -1,5 +1,14 @@
+package ui; /*package name*/
+
 import java.util.Scanner;
 import java.sql.Connection;
+
+/*import java classes from packages*/
+import model.User;
+import service.UserService;
+import database.DatabaseConnection;
+
+/*main programme*/
 
 class Programme1{
     public static void main(String args[]){
@@ -59,6 +68,10 @@ class Programme1{
             }  
         }
 
+        System.out.print("Enter your registration number : ");
+        String registrationNumber=scanner.next();
+        printLine();
+
         System.out.println("-------------------- "+ role + " dashboard --------------------");
         printLine();
         System.out.println("welcome "+ roleName +" for the student management system of "+schoolName);
@@ -69,9 +82,9 @@ class Programme1{
         String firstName = nameParts[1];
         String lastName = nameParts[2];
 
-        UserService.saveUser(role, title, firstName, lastName);
+        User user=new User(role,registrationNumber, title, firstName, lastName);
 
-        actions(scanner,role);
+        UserService.saveUser(user);
         
     }
 
