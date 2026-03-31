@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ui.RegisterUserController">
+
+    <Label text="User Registration"/>
+
+    <ComboBox fx:id="roleBox" promptText="Select Role"/>
+    <TextField fx:id="regNoField" promptText="Registration Number"/>
+
+    <ComboBox fx:id="titleBox" promptText="Select Title"/>
+    <TextField fx:id="firstNameField" promptText="First Name"/>
+    <TextField fx:id="lastNameField" promptText="Last Name"/>
+
+    <Button text="Register" onAction="#handleRegister"/>
+
+</VBox>
